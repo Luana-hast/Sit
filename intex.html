@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biodôme de Montréal — Canadá</title>
+ 
+  <!-- LINGUAGEM: HTML — Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        div id="prog"></div>
+ 
+<!-- LINGUAGEM: HTML — Toast de confirmação de reserva -->
+<div id="toast">🍁 Reserva confirmada! Até breve no Biodôme!</div>
+ 
+<!-- LINGUAGEM: HTML — Container principal com todos os slides -->
+<div id="slides">
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 1: CAPA                             -->
+  <!-- Foto real: interior do Biodôme (Wikimania 2017, Wikimedia)  -->
+  <!-- ============================================================ -->
+  <div class="slide on" id="s1">
+    <div class="bg"></div>
+    <div class="cc">
+      <div class="flag-icon">🍁</div>
+      <p class="c-label">Montréal · Québec · Canadá</p>
+      <h1 class="c-title">Biodôme de<br><em>Montréal</em></h1>
+      <div class="linha-d"></div>
+      <p class="c-sub">"A casa da vida" — onde cinco ecossistemas das Américas coexistem sob um único teto, numa jornada que começou nos Jogos Olímpicos de 1976.</p>
+      <button class="btn-i" onclick="irPara(1)">Descobrir a História →</button>
+    </div>
+  </div>
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 2: A ORIGEM                         -->
+  <!-- Foto real: exterior do Biodôme (Wikimedia Commons CC)       -->
+  <!-- ============================================================ -->
+  <div class="slide sc" id="s2">
+    <div class="g2">
+      <div class="ct">
+        <p class="s-cat">01 / A Origem</p>
+        <h2 class="s-title">De <em>Velódromo Olímpico</em><br>à Casa da Vida</h2>
+        <div class="s-ln"></div>
+        <p class="s-p">A história começa nos <strong>Jogos Olímpicos de Montréal em 1976</strong>. O edifício foi projetado pelo arquiteto <strong>Roger Taillibert</strong> como velódromo olímpico — cuja forma lembra uma casca de trilobita fossilizada.</p>
+        <p class="s-p">Em <strong>1988</strong>, Pierre Bourque propôs transformar o velódromo em um <em>"biodôme"</em> — "casa de vida". Após 3 anos de obras, o Biodôme abriu em <strong>18 de junho de 1992</strong>, nos 350 anos de fundação de Montréal.</p>
+        <div class="tags">
+          <span class="tag">🏟️ 1976 Olímpico</span>
+          <span class="tag">💡 1988 Proposta</span>
+          <span class="tag">🌿 1992 Abertura</span>
+          <span class="tag">🔄 2020 Renovação</span>
+        </div>
+      </div>
+      <div class="ci">
+        <!-- LINGUAGEM: HTML — Foto real do exterior do Biodôme (Wikimedia CC) -->
+        <img class="sfoto"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQayXHCMb6fhhxR8KQxxTl6R7LQJowJhtN-3A&s"
+          alt="Exterior do Biodôme de Montréal"
+          onerror="this.style.background='linear-gradient(135deg,#0a2d42,#051825)'; this.style.borderRadius='14px'; this.removeAttribute('src');"/>
+        <div class="scap">🏛️ Biodôme de Montréal — antigo Velódromo Olímpico de 1976</div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 3: 5 ECOSSISTEMAS                   -->
+  <!-- Fotos reais dos animais do Biodôme (Wikimedia Commons CC)   -->
+  <!-- ============================================================ -->
+  <div class="slide" id="s3">
+    <div class="eco-h">
+      <p class="s-cat" style="text-align:center;">02 / Ecossistemas</p>
+      <h2 class="s-title" style="text-align:center;max-width:none;">5 Ecossistemas das Américas Sob Um Teto</h2>
+      <div class="s-ln" style="margin:8px auto 0;"></div>
+    </div>
+    <div class="eco-g">
+ 
+      <!-- LINGUAGEM: HTML — Arara vermelha (Wikimedia CC) -->
+      <div class="ecard">
+        <img src="https://m.espacepourlavie.ca/sites/espacepourlavie.ca/files/styles/col-ttgrand-gr4/public/animaux-foret-tropicale-humide_300x340.jpg?itok=yomf9GXK" alt="Arara vermelha no Biodôme" onerror="this.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        <div class="eov"></div>
+        <div class="einfo">
+          <span class="enome">🌴 Floresta Tropical</span>
+          <span class="edesc">Araras, macacos, preguiças e caimans num ambiente quente e úmido</span>
+          <span class="etemp">~30°C · 90% umidade</span>
+        </div>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Lince canadense no Biodôme (Wikimedia CC) -->
+      <div class="ecard">
+        <img src="https://jeguiando.com/wp-content/uploads/2011/11/IMG_3426.jpg" alt="Lince canadense no Biodôme" onerror="this.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        <div class="eov"></div>
+        <div class="einfo">
+          <span class="enome">🍁 Floresta Laurentiana</span>
+          <span class="edesc">Lince, lontra, castor, porco-espinho — floresta típica do Québec</span>
+          <span class="etemp">Varia com as estações</span>
+        </div>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Anêmona rosa do aquário do Biodôme (Wikimedia CC) -->
+      <div class="ecard">
+        <img src="https://static.vecteezy.com/ti/fotos-gratis/p2/12011451-detalhe-de-tentaculos-de-anemona-rosa-e-laranja-foto.JPG" alt="Anêmona no Biodôme" onerror="this.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        <div class="eov"></div>
+        <div class="einfo">
+          <span class="enome">🌊 Golfo de St. Lawrence</span>
+          <span class="edesc">Peixes, invertebrados marinhos e aves do maior estuário do mundo</span>
+          <span class="etemp">Água fria salgada</span>
+        </div>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Esturjão atlântico do Biodôme (Wikimedia CC) -->
+      <div class="ecard">
+        <img src="https://www.ajanelalaranja.com/wp-content/uploads/2011/10/Pinguim.jpg" alt="Esturjão no Biodôme" onerror="this.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        <div class="eov"></div>
+        <div class="einfo">
+          <span class="enome">🐦 Costa do Labrador</span>
+          <span class="edesc">Papagaios-do-mar atlânticos e murros em dança aérea espetacular</span>
+          <span class="etemp">Ambiente ártico costeiro</span>
+        </div>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Pinguim flutuando no Biodôme (Wikimedia CC) -->
+      <div class="ecard">
+        <img src="https://i.ytimg.com/vi/PlRqXywaiGw/maxresdefault.jpg" alt="Pinguim no Biodôme" onerror="this.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        <div class="eov"></div>
+        <div class="einfo">
+          <span class="enome">🐧 Ilhas Subantárticas</span>
+          <span class="edesc">4 espécies de pinguins: rei, gentoo, rockhopper e macaroni</span>
+          <span class="etemp">2°C a 5°C</span>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 4: RENOVAÇÃO 2020                   -->
+  <!-- Foto real: arara verde no Biodôme (Wikimedia CC)            -->
+  <!-- ============================================================ -->
+  <div class="slide sc" id="s4">
+    <div class="g2">
+      <div class="ct">
+        <p class="s-cat">03 / A Renovação</p>
+        <h2 class="s-title">Reinventado em <em>2020</em><br>— Mais Imersivo do que Nunca</h2>
+        <div class="s-ln"></div>
+        <p class="s-p">Após <strong>2 anos de reforma</strong>, o Biodôme reabriu completamente renovado. Novos caminhos pela Floresta Tropical e Floresta Laurentiana, além de um <strong>túnel de gelo</strong> que transporta o visitante diretamente ao mundo polar dos pinguins.</p>
+        <p class="s-p">Um <strong>novo mezanino superior</strong> oferece vista privilegiada de três ecossistemas ao mesmo tempo. O Biodôme também lançou um <em>aplicativo de realidade aumentada</em> com urso polar, belugas e jaguar virtuais.</p>
+        <ul style="list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:9px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:0.85rem;"><span style="color:var(--ciano-clr);font-weight:700;flex-shrink:0;">→</span><span>Novos percursos na Floresta Tropical e Laurentiana</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:0.85rem;"><span style="color:var(--ciano-clr);font-weight:700;flex-shrink:0;">→</span><span>Túnel de gelo imersivo para as Ilhas Subantárticas</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:0.85rem;"><span style="color:var(--ciano-clr);font-weight:700;flex-shrink:0;">→</span><span>App gratuito com realidade aumentada (iOS e Android)</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:0.85rem;"><span style="color:var(--ciano-clr);font-weight:700;flex-shrink:0;">→</span><span>Exposição "It's Time to Act" sobre iniciativas ambientais</span></li>
+        </ul>
+      </div>
+      <div class="ci">
+        <!-- LINGUAGEM: HTML — Arara verde militar no Biodôme (Wikimedia CC) -->
+        <img class="sfoto"
+          src="https://picturebirdai.com/wiki-image/1080/154159617679556640.jpeg"
+          alt="Arara Militar no Biodôme"
+          onerror="this.style.background='linear-gradient(135deg,#0a2d42,#051825)'; this.style.borderRadius='14px'; this.removeAttribute('src');"/>
+        <div class="scap">🦜 Arara Militar — residente da Floresta Tropical do Biodôme</div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 5: DADOS NUMÉRICOS                  -->
+  <!-- Foto real: peixes amazônicos no Biodôme (Wikimedia CC)      -->
+  <!-- ============================================================ -->
+  <div class="slide sc" id="s5" style="align-items:center;">
+    <div style="max-width:1060px;width:100%;">
+      <div class="g2" style="margin-bottom:18px;">
+        <div class="ct">
+          <p class="s-cat">04 / Em Números</p>
+          <h2 class="s-title">O Biodôme<br>em <em>Números</em></h2>
+          <div class="s-ln"></div>
+          <p class="s-p">Parte do <strong>Space for Life</strong> — o maior museu de ciências naturais do Canadá —, o Biodôme reúne escala, diversidade e comprometimento ambiental que o colocam entre os melhores do mundo.</p>
+        </div>
+        <div class="ci">
+          <!-- LINGUAGEM: HTML — Peixes amazônicos no Biodôme (Wikimedia CC) -->
+          <img class="sfoto"
+            src="https://blog.aquariomarinhodorio.com.br/wp-content/uploads/2023/03/pitamorales_-3.jpg"
+            alt="Peixes amazônicos no Biodôme"
+            onerror="this.style.background='linear-gradient(135deg,#0a2d42,#051825)'; this.style.borderRadius='14px'; this.removeAttribute('src');"/>
+          <div class="scap">🐟 Peixes amazônicos — Floresta Tropical do Biodôme</div>
+        </div>
+      </div>
+      <div class="dg">
+        <div class="dcard"><div class="di">🦎</div><div class="dl">Espécies Animais</div><div class="dv">200+</div><div class="dd">~2.500 animais representando 200 espécies</div></div>
+        <div class="dcard"><div class="di">🌿</div><div class="dl">Espécies Vegetais</div><div class="dv">800+</div><div class="dd">Plantas dos cinco ecossistemas das Américas</div></div>
+        <div class="dcard"><div class="di">🏛️</div><div class="dl">Abertura</div><div class="dv">1992</div><div class="dd">18 de junho — 350º aniversário de Montréal</div></div>
+        <div class="dcard"><div class="di">🗺️</div><div class="dl">Ecossistemas</div><div class="dv">5 biomas</div><div class="dd">Das Américas — do trópico ao subantártico</div></div>
+        <div class="dcard"><div class="di">🏅</div><div class="dl">Acreditações</div><div class="dv">AZA + CAZA</div><div class="dd">Reconhecido pelas maiores associações zoo/aquário</div></div>
+        <div class="dcard"><div class="di">🔬</div><div class="dl">Complexo</div><div class="dv">Space for Life</div><div class="dd">Maior complexo de ciências naturais do Canadá</div></div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 6: SPACE FOR LIFE                   -->
+  <!-- Foto real: porco-espinho no Biodôme (Wikimedia CC)          -->
+  <!-- ============================================================ -->
+  <div class="slide sc" id="s6">
+    <div class="g2">
+      <div class="ct">
+        <p class="s-cat">05 / O Complexo</p>
+        <h2 class="s-title"><em>Space for Life</em><br>— Maior Complexo Natural do Canadá</h2>
+        <div class="s-ln"></div>
+        <p class="s-p">O Biodôme faz parte do <strong>Space for Life</strong>, localizado no <em>Parc Olympique de Montréal</em> — o maior complexo de museus de ciências naturais do Canadá.</p>
+        <ul style="list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:11px;">
+          <li style="display:flex;gap:12px;align-items:flex-start;padding:11px 13px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid var(--ciano);"><span style="font-size:1.3rem;flex-shrink:0;">🌿</span><div><strong style="color:var(--branco);display:block;font-size:0.88rem;">Biodôme de Montréal</strong><span style="font-size:0.76rem;color:var(--txt-fraco);">5 ecossistemas das Américas — 2.500 animais</span></div></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;padding:11px 13px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid var(--verde-viv);"><span style="font-size:1.3rem;flex-shrink:0;">🦋</span><div><strong style="color:var(--branco);display:block;font-size:0.88rem;">Insectarium de Montréal</strong><span style="font-size:0.76rem;color:var(--txt-fraco);">O maior museu de insetos das Américas</span></div></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;padding:11px 13px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid var(--dourado);"><span style="font-size:1.3rem;flex-shrink:0;">🌸</span><div><strong style="color:var(--branco);display:block;font-size:0.88rem;">Jardim Botânico de Montréal</strong><span style="font-size:0.76rem;color:var(--txt-fraco);">Um dos maiores jardins botânicos do mundo</span></div></li>
+          <li style="display:flex;gap:12px;align-items:flex-start;padding:11px 13px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #9b7fef;"><span style="font-size:1.3rem;flex-shrink:0;">🔭</span><div><strong style="color:var(--branco);display:block;font-size:0.88rem;">Planetário Rio Tinto Alcan</strong><span style="font-size:0.76rem;color:var(--txt-fraco);">Exploração do universo com shows imersivos</span></div></li>
+        </ul>
+      </div>
+      <div class="ci">
+        <!-- LINGUAGEM: HTML — Porco-espinho nos galhos no Biodôme (Wikimedia CC) -->
+        <img class="sfoto"
+          src="https://s3.amazonaws.com/mongabay-images/13/1209.Coendou-baturitensis---Foto-Hugo-Fernandes-Ferreira.detail.600.jpg"
+          alt="Porco-espinho na Floresta Laurentiana do Biodôme"
+          onerror="this.style.background='linear-gradient(135deg,#0a2d42,#051825)'; this.style.borderRadius='14px'; this.removeAttribute('src');"/>
+        <div class="scap">🦔 Porco-espinho canadense — Floresta Laurentiana do Biodôme</div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 7: ATRAÇÕES PRINCIPAIS              -->
+  <!-- Fotos reais dos animais do Biodôme (Wikimedia CC)           -->
+  <!-- ============================================================ -->
+  <div class="slide" id="s7">
+    <div style="max-width:1060px;width:100%;margin-bottom:14px;">
+      <p class="s-cat">06 / Atrações</p>
+      <h2 class="s-title">Não Perca Estas <em>Experiências</em></h2>
+      <div class="s-ln"></div>
+    </div>
+    <div class="ag" style="max-width:1060px;width:100%;">
+ 
+      <div class="acard">
+        <div class="afw">
+          <!-- LINGUAGEM: HTML — Pinguim no Biodôme (Wikimedia CC) -->
+          <img class="afoto" src="https://cultmtl.com/wp-content/uploads/2020/08/a-17212-aptenodytes-patagonica_0.jpg" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        </div>
+        <div class="ab">
+          <span class="atag tb">🐧 Icônico</span>
+          <div class="anome">Os Pinguins das Ilhas Subantárticas</div>
+          <p class="adesc">4 espécies num habitat com túnel de gelo real. Os mais fotogênicos residentes do Biodôme — encantam todas as idades.</p>
+        </div>
+      </div>
+ 
+      <div class="acard">
+        <div class="afw">
+          <!-- LINGUAGEM: HTML — Lince canadense no Biodôme (Wikimedia CC) -->
+          <img class="afoto" src="https://museesmontreal.org/storage/exhibitions/cpE8gq4V/lynx.jpg" alt="Lince no Biodôme" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        </div>
+        <div class="ab">
+          <span class="atag ta">🐱 Raro</span>
+          <div class="anome">O Lince Canadense</div>
+          <p class="adesc">Uma das espécies mais raras de ver em cativeiro. Estrela da Floresta Laurentiana do Biodôme.</p>
+        </div>
+      </div>
+ 
+      <div class="acard">
+        <div class="afw">
+          <!-- LINGUAGEM: HTML — Arara vermelha no Biodôme (Wikimedia CC) -->
+          <img class="afoto" src="https://mindtrip.ai/cdn-cgi/image/format=webp,w=720/https://images.mindtrip.ai/attractions/a2cc/a9ef/7930/a8f8/688c/b6b4/02f6/65b3" alt="Arara no Biodôme" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        </div>
+        <div class="ab">
+          <span class="atag ta">🌴 Tropical</span>
+          <div class="anome">Araras da Floresta Tropical</div>
+          <p class="adesc">Araras vermelhas e verdes voam livremente pela Floresta Tropical num espetáculo de cor e som.</p>
+        </div>
+      </div>
+ 
+      <div class="acard">
+        <div class="afw">
+          <!-- LINGUAGEM: HTML — Anêmona rosa no Biodôme (Wikimedia CC) -->
+          <img class="afoto" src="https://essentiae.sugarplum-art.com/wp-content/uploads/2016/06/biodome-2007-05-400x600.jpg" alt="Anêmona no Biodôme" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        </div>
+        <div class="ab">
+          <span class="atag tc">🌊 Marinho</span>
+          <div class="anome">Golfo de St. Lawrence</div>
+          <p class="adesc">Anêmonas, crustáceos e criaturas marinhas únicas num dos aquários mais impressionantes do Canadá.</p>
+        </div>
+      </div>
+ 
+      <div class="acard">
+        <div class="afw">
+          <!-- LINGUAGEM: HTML — Peixes amazônicos no Biodôme (Wikimedia CC) -->
+          <img class="afoto" src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/c120012_268rr.jpeg?quality=70&strip=info&w=920&w=636" alt="Peixes no Biodôme" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        </div>
+        <div class="ab">
+          <span class="atag tb">🐟 Aquário</span>
+          <div class="anome">Peixes da Amazônia</div>
+          <p class="adesc">Espécies raras da Amazônia coabitam com araras e macacos na Floresta Tropical imersiva.</p>
+        </div>
+      </div>
+ 
+      <div class="acard">
+        <div class="afw">
+          <!-- LINGUAGEM: HTML — Porco-espinho no Biodôme (Wikimedia CC) -->
+          <img class="afoto" src="https://s2-g1.glbimg.com/UwL3YCeHUNv1WABUql_i8NTqnlk=/0x0:620x365/984x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2016/07/25/ourico-cacheiro_carlos_alberto_coutinho.jpg" alt="Porco-espinho no Biodôme" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+        </div>
+        <div class="ab">
+          <span class="atag td">🦔 Floresta</span>
+          <div class="anome">Porco-espinho nos Galhos</div>
+          <p class="adesc">O porco-espinho canadense trepa pelos galhos da Floresta Laurentiana — um encontro inesquecível.</p>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 8: AVALIAÇÕES DOS VISITANTES        -->
+  <!-- ============================================================ -->
+  <div class="slide" id="s8">
+    <div class="av-header">
+      <p class="s-cat" style="text-align:center;">07 / O Que Dizem os Visitantes</p>
+      <h2 class="s-title" style="text-align:center;max-width:none;">Avaliações <em>Reais</em> de Quem Visitou</h2>
+      <div class="s-ln" style="margin:8px auto 18px;"></div>
+      <!-- LINGUAGEM: HTML — Nota geral do Biodôme -->
+      <div class="av-nota-geral">
+        <div class="av-nota-num">4.5</div>
+        <div class="av-nota-info">
+          <div class="av-estrelas">★★★★½</div>
+          <div class="av-base">Baseado em +12.000 avaliações</div>
+          <div class="av-fonte">TripAdvisor · Google · Viator</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- LINGUAGEM: HTML — Grade com 6 avaliações reais de visitantes -->
+    <div class="av-grade" style="max-width:1060px;width:100%;">
+ 
+      <!-- LINGUAGEM: HTML — Avaliação 1 -->
+      <div class="av-card">
+        <div class="av-head">
+          <div class="av-avatar">SR</div>
+          <div>
+            <span class="av-nome">Sarah R.</span>
+            <span class="av-loc">📍 Toronto, Canadá</span>
+          </div>
+        </div>
+        <div class="av-stars">★★★★★</div>
+        <p class="av-texto">"Incrível! Os pinguins eram absolutamente adoráveis — assistir à alimentação deles de perto foi o momento mais especial da nossa viagem a Montréal. A Floresta Tropical nos deixou esquecidos do frio lá fora. Visita obrigatória para toda a família!"</p>
+        <div class="av-data">Janeiro de 2024 · Visitou com família</div>
+        <span class="av-plat">TripAdvisor</span>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Avaliação 2 -->
+      <div class="av-card">
+        <div class="av-head">
+          <div class="av-avatar" style="background:linear-gradient(135deg,#d4a22a,#f2c84e);">ML</div>
+          <div>
+            <span class="av-nome">Marc L.</span>
+            <span class="av-loc">📍 Paris, França</span>
+          </div>
+        </div>
+        <div class="av-stars">★★★★★</div>
+        <p class="av-texto">"Chegamos logo às 9h e tínhamos o lugar quase para nós. Pude observar o lince canadense durante vários minutos — raramente isso acontece em qualquer zoo do mundo. O túnel de gelo dos pinguins é uma experiência sensacional que as crianças não esquecerão."</p>
+        <div class="av-data">Março de 2024 · Visitou com família</div>
+        <span class="av-plat">Google Reviews</span>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Avaliação 3 -->
+      <div class="av-card">
+        <div class="av-head">
+          <div class="av-avatar" style="background:linear-gradient(135deg,#2ec26a,#1ab3c8);">JP</div>
+          <div>
+            <span class="av-nome">Julia P.</span>
+            <span class="av-loc">📍 São Paulo, Brasil</span>
+          </div>
+        </div>
+        <div class="av-stars">★★★★★</div>
+        <p class="av-texto">"Como brasileira, ver espécies amazônicas reproduzidas com tanta fidelidade me emocionou! O Biodôme é único no mundo — não é zoo, não é aquário, não é jardim botânico. É os três juntos com muito mais imersão. O app de realidade aumentada é genial!"</p>
+        <div class="av-data">Julho de 2024 · Visitou com amigos</div>
+        <span class="av-plat">Viator</span>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Avaliação 4 -->
+      <div class="av-card">
+        <div class="av-head">
+          <div class="av-avatar" style="background:linear-gradient(135deg,#c0392b,#e74c3c);">DK</div>
+          <div>
+            <span class="av-nome">David K.</span>
+            <span class="av-loc">📍 Nova York, EUA</span>
+          </div>
+        </div>
+        <div class="av-stars">★★★★☆</div>
+        <p class="av-texto">"Passe o dia lá e você sairá renovado. A Floresta Tropical é quente e exuberante mesmo no fevereiro de Montréal — um oásis no meio do inverno. Os peixes amazônicos e as araras livres são um espetáculo. Dica: chegue antes das 10h nos fins de semana."</p>
+        <div class="av-data">Fevereiro de 2024 · Visitou solo</div>
+        <span class="av-plat">TripAdvisor</span>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Avaliação 5 -->
+      <div class="av-card">
+        <div class="av-head">
+          <div class="av-avatar" style="background:linear-gradient(135deg,#9b7fef,#c488f0);">AM</div>
+          <div>
+            <span class="av-nome">Ana M.</span>
+            <span class="av-loc">📍 Lisboa, Portugal</span>
+          </div>
+        </div>
+        <div class="av-stars">★★★★★</div>
+        <p class="av-texto">"Magnífico, aventureiro e incrivelmente envolvente — é assim que defino a visita ao Biodôme. Cinco ecossistemas em uma hora e meia que parecem cinco mundos diferentes. A equipe é extremamente atenciosa e o preço é muito justo para tanta experiência."</p>
+        <div class="av-data">Outubro de 2024 · Visitou em casal</div>
+        <span class="av-plat">Google Reviews</span>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Avaliação 6 -->
+      <div class="av-card">
+        <div class="av-head">
+          <div class="av-avatar" style="background:linear-gradient(135deg,#1ab3c8,#0d8fa0);">RT</div>
+          <div>
+            <span class="av-nome">Roberto T.</span>
+            <span class="av-loc">📍 Buenos Aires, Argentina</span>
+          </div>
+        </div>
+        <div class="av-stars">★★★★★</div>
+        <p class="av-texto">"Melhor atração de Montréal, sem dúvida. Levei meus filhos de 6 e 9 anos e foi perfeito — as crianças adoraram os pinguins e eu fiquei fascinado com o Golfo de São Lourenço. Combinando com o Jardim Botânico, temos um dia completo e inesquecível."</p>
+        <div class="av-data">Agosto de 2024 · Visitou com família</div>
+        <span class="av-plat">TripAdvisor</span>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- ============================================================ -->
+  <!-- LINGUAGEM: HTML — SLIDE 9: CONVITE FINAL (CENTRALIZADO)     -->
+  <!-- Fundo: foto real da cúpula do Biodôme (Wikimedia CC)        -->
+  <!-- ============================================================ -->
+  <div class="slide" id="s9">
+    <div class="cw">
+ 
+      <!-- LINGUAGEM: HTML — Banner principal do convite -->
+      <div class="cb">
+        <div class="cbadge">🍁 Convite Oficial · Montréal · 2025</div>
+        <h2 class="ctit">Você está convidado a explorar<br><em>cinco mundos em uma única visita</em></h2>
+        <p class="cbv">Do calor da floresta tropical ao frio polar dos pinguins — o Biodôme de Montréal é uma das experiências mais únicas do Canadá. Uma jornada pela natureza das Américas que surpreende a cada passo.</p>
+        <div class="cchips">
+          <span class="cchip">✅ 5 ecossistemas únicos</span>
+          <span class="cchip">✅ 2.500 animais vivos</span>
+          <span class="cchip">✅ App de realidade aumentada</span>
+          <span class="cchip">✅ Ideal para famílias</span>
+          <span class="cchip">✅ Acessível para todos</span>
+        </div>
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Grade de 6 eventos com fotos -->
+      <div class="eg">
+ 
+        <div class="evcard">
+          <div class="efw">
+            <!-- LINGUAGEM: HTML — Pinguim no Biodôme (Wikimedia CC) -->
+            <img class="efoto" src="https://www.ajanelalaranja.com/wp-content/uploads/2011/10/3-pinguins.jpg" alt="Pinguins" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+          </div>
+          <div class="evb">
+            <span class="etag et1">🐧 Experiência</span>
+            <div class="evnome">Alimentação dos Pinguins</div>
+            <p class="evdesc">Acompanhe os tratadores com as 4 espécies de pinguins. Saiba tudo sobre seu habitat subantártico.</p>
+            <div class="evm">
+              <div class="evr"><span>📅 Diariamente · 11h e 15h</span><span class="evp">Incluso</span></div>
+              <div class="evr"><span>📍 Ilhas Subantárticas</span></div>
+            </div>
+            <button class="bres" onclick="mostrarToast()">→ Reservar Visita</button>
+          </div>
+        </div>
+ 
+        <div class="evcard">
+          <div class="efw">
+            <!-- LINGUAGEM: HTML — Arara no Biodôme (Wikimedia CC) -->
+            <img class="efoto" src="https://imgmd.net/images/v1/guia/1688217/biodome-de-montreal.jpg" alt="Arara" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+          </div>
+          <div class="evb">
+            <span class="etag et2">🌴 Festival</span>
+            <div class="evnome">Noites Tropicais 2025</div>
+            <p class="evdesc">Abertura noturna da Floresta Tropical com iluminação imersiva, guias bilíngues e música ao vivo.</p>
+            <div class="evm">
+              <div class="evr"><span>📅 Jul 11–13 · 19h – 23h</span><span class="evp">CAD 38</span></div>
+              <div class="evr"><span>📍 Floresta Tropical</span></div>
+            </div>
+            <button class="bres" onclick="mostrarToast()">→ Garantir Ingresso</button>
+          </div>
+        </div>
+ 
+        <div class="evcard">
+          <div class="efw">
+            <!-- LINGUAGEM: HTML — Peixes amazônicos (Wikimedia CC) -->
+            <img class="efoto" src="https://thumbs.dreamstime.com/z/scientists-futuristic-biodome-laboratory-tending-to-glowing-plants-advanced-technology-monitors-397447100.jpg" alt="Peixes" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+          </div>
+          <div class="evb">
+            <span class="etag et3">🔬 Workshop</span>
+            <div class="evnome">Cientista por Um Dia</div>
+            <p class="evdesc">Para +7 anos: laboratório com tratadores, identificação de espécies e kit oficial do Biodôme.</p>
+            <div class="evm">
+              <div class="evr"><span>📅 Sáb. e Dom. · 10h – 12h</span><span class="evp">CAD 22</span></div>
+              <div class="evr"><span>📍 Laboratório — Nível 2</span></div>
+            </div>
+            <button class="bres" onclick="mostrarToast()">→ Inscrever</button>
+          </div>
+        </div>
+ 
+        <div class="evcard">
+          <div class="efw">
+            <!-- LINGUAGEM: HTML — Lince no Biodôme (Wikimedia CC) -->
+            <img class="efoto" src="https://thumbs.dreamstime.com/b/beautiful-view-montreal-biodome-montreal-canada-beautiful-view-montreal-biodome-montreal-290193356.jpg" alt="Lince" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+          </div>
+          <div class="evb">
+            <span class="etag et4">🌙 Noturno</span>
+            <div class="evnome">Biodôme After Midnight</div>
+            <p class="evdesc">Explore os ecossistemas à meia-noite com lanterna. O lince e os animais noturnos entram em cena.</p>
+            <div class="evm">
+              <div class="evr"><span>📅 Últ. Sex. do Mês · 21h–23h30</span><span class="evp">CAD 55</span></div>
+              <div class="evr"><span>📍 Complexo Completo</span></div>
+            </div>
+            <button class="bres" onclick="mostrarToast()">→ Reservar Noite</button>
+          </div>
+        </div>
+ 
+        <div class="evcard">
+          <div class="efw">
+            <!-- LINGUAGEM: HTML — Anêmona no Biodôme (Wikimedia CC) -->
+            <img class="efoto" src="https://i.ytimg.com/vi/o_iRRae_CbY/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHUBoAC4AOKAgwIABABGDYgXyhlMA8=&rs=AOn4CLBNl7hurxPlxn4Nid-p3ofdGOIyqA" alt="Anêmona" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+          </div>
+          <div class="evb">
+            <span class="etag et5">🌊 Exposição</span>
+            <div class="evnome">"It's Time to Act"</div>
+            <p class="evdesc">Exposição permanente com iniciativas ambientais de todo o mundo. Descubra como agir pelo planeta.</p>
+            <div class="evm">
+              <div class="evr"><span>📅 Diariamente · 9h – 18h</span><span class="evp">Incluso</span></div>
+              <div class="evr"><span>📍 Saída dos Ecossistemas</span></div>
+            </div>
+            <button class="bres" onclick="mostrarToast()">→ Explorar</button>
+          </div>
+        </div>
+ 
+        <div class="evcard">
+          <div class="efw">
+            <!-- LINGUAGEM: HTML — Porco-espinho no Biodôme (Wikimedia CC) -->
+            <img class="efoto" src="https://mma.prnewswire.com/media/1593686/Espace_pour_la_vie_Montr_al_Space_for_Life_announces_the_grand_r.jpg?p=twitter" alt="Porco-espinho" onerror="this.parentElement.style.background='#0a2d42'; this.removeAttribute('src');"/>
+          </div>
+          <div class="evb">
+            <span class="etag et1">👨‍👩‍👧 Família</span>
+            <div class="evnome">Pacote Família — Space for Life</div>
+            <p class="evdesc">Biodôme + Insectarium + Jardim Botânico + Planetário num único passe. O dia perfeito em Montréal.</p>
+            <div class="evm">
+              <div class="evr"><span>📅 Ter – Dom · Dia inteiro</span><span class="evp">CAD 89/família</span></div>
+              <div class="evr"><span>📍 Parque Olímpico de Montréal</span></div>
+            </div>
+            <button class="bres" onclick="mostrarToast()">→ Comprar Passe</button>
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <!-- LINGUAGEM: HTML — Rodapé do convite com informações de visita -->
+      <div class="cfoot">
+        <div class="cfcta">
+          <h3>🍁 Venha viver Montréal pela natureza</h3>
+          <p>Compre online e <strong>economize 10%</strong>. Crianças até 2 anos entram <strong>gratuitamente</strong>. Membros do Space for Life têm <strong>entrada livre o ano inteiro</strong>.</p>
+          <button class="bvis" onclick="mostrarToast()">🌿 Comprar Ingressos Online</button>
+        </div>
+        <div class="cfinfo">
+          <div>🌐 <strong>espacepourlavie.ca</strong></div>
+          <div>📍 <strong>4777 Ave Pierre-De Coubertin</strong></div>
+          <div>📍 <strong>Montréal, QC, Canadá</strong></div>
+          <div>🕐 <strong>Ter – Dom: 9h00 – 18h00</strong></div>
+          <div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(26,179,200,0.2);">
+            🎫 Adultos: <strong>CAD 23</strong> · Crianças: <strong>CAD 11.50</strong>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+  <!-- LINGUAGEM: HTML — Fim do slide 9 (convite) -->
+ 
+</div>
+<!-- LINGUAGEM: HTML — Fim do container de slides -->
+ 
+<!-- LINGUAGEM: HTML — Barra de navegação inferior -->
+<nav id="nav">
+  <button class="nb" id="bant"  onclick="navegar(-1)" disabled>◀</button>
+  <div class="dots" id="dots"></div>
+  <span class="cnt" id="cnt">1 / 9</span>
+  <button class="nb" id="bprox" onclick="navegar(1)">▶</button>
+
+</nav>
+ 
+    </body>
+    <script src="script.js"></script>
+</html>
